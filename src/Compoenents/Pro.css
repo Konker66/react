@@ -1,0 +1,35 @@
+:root {
+    --card-border-color: #FFD5A1; /* Default border color */
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure the card takes the full height of its parent */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    border: 2px solid var(--card-border-color); /* Use the CSS variable for the border color */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly scale up the card */
+    box-shadow: 0 4px 8px rgba(2, 13, 81, 0.2); /* Add a shadow effect */
+  }
+  
+  .card-img-top {
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .card-text.flex-grow-1 {
+    flex-grow: 1;
+  }
+  
+  .btn-primary.mt-auto {
+    margin-top: auto;
+  }
